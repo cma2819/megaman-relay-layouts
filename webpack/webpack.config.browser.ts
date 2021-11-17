@@ -3,7 +3,7 @@ import path from 'path';
 import globby from 'globby';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const targets = ['dashboard', 'graphics'];
+const targets = ['graphics'];
 
 const makeBrowserConfig = (target: string): Configuration => {
 

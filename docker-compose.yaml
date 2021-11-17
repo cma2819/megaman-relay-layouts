@@ -5,6 +5,6 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - ./:/nodecg/bundles/ome-speedrun-layouts
+      - ./:/nodecg/bundles/megaman-relay-layouts
       - ./cfg:/nodecg/cfg
       - ./db:/nodecg/db

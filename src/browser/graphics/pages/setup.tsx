@@ -2,51 +2,52 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import { GraphicsApp } from '../GraphicsApp';
-import { SetupSchedules } from '../components/SetupSchedules';
-import { SpotifyTrack } from '../components/SpotifyTrack';
-import { Logo } from '../components/Logo';
+import { RunDataLabel } from '../components/RunDataLabel';
+import { RunParticipants } from '../components/RunParticipants';
+import { EstimateTime } from '../components/EstimateTime';
 
-const LogoArea = styled.div`
+const RunDataArea = styled.div`
   position: absolute;
-  top: 16px;
-  left: 16px;
-  height: 160px;
-  width: 320px;
-  filter: drop-shadow(0 0 8px #222222);
+  top: 856px;
+  left: 144px;
+  width: 382px;
+  height: 134px;
+  padding: 8px 16px;
 `;
 
-const RunDeck = styled.div`
+const PlayerArea = styled.div`
   position: absolute;
-  top: 180px;
-  left: 80px;
-  height: 620px;
-  width: 1440px;
-  filter: drop-shadow(0 0 8px #222222);
+  top: 856px;
+  left: 754px;
+  width: 382px;
+  height: 134px;
+  padding: 8px 16px;
 `;
 
-const SpotifyTrackArea = styled.div`
+const EstimateArea = styled.div`
   position: absolute;
-  top: 970px;
-  left: 80px;
-  filter: drop-shadow(0 0 8px #222222);
+  top: 856px;
+  left: 1364px;
+  width: 382px;
+  height: 134px;
+  padding: 8px 16px;
 `;
 
 const App = () => {
-
   return (
     <React.Fragment>
       <GraphicsApp>
-        <LogoArea>
-          <Logo />
-        </LogoArea>
-        <RunDeck>
-          <SetupSchedules/>
-        </RunDeck>
-        <SpotifyTrackArea>
-          <SpotifyTrack />
-        </SpotifyTrackArea>
+        <RunDataArea>
+          <RunDataLabel />
+        </RunDataArea>
+        <PlayerArea>
+          <RunParticipants />
+        </PlayerArea>
+        <EstimateArea>
+          <EstimateTime />
+        </EstimateArea>
       </GraphicsApp>
-    </React.Fragment>
+    </React.Fragment>  
   );
 }
 

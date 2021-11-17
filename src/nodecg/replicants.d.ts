@@ -1,14 +1,4 @@
-import { Asset } from './asset';
-import { Message, Timekeeping } from './generated';
 
-type ReplicantMap = {
-  'assets:logo': Asset[];
-  timekeeping: Timekeeping;
-  message: Message;
-};
+type ReplicantMap = {};
 
-export {
-  Timekeeping,
-  Message,
-  ReplicantMap
-};
+export {};

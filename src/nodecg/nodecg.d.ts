@@ -4,14 +4,14 @@ import { MessageMap } from './messages';
 import { ReplicantMap } from './replicants';
 
 export type BundleNodecgInstance = CreateNodecgInstance<
-  'ome-speedrun-layouts',
+  'megaman-relay-layouts',
   Configschema,
   ReplicantMap,
   MessageMap
 >;
 
 export type BundleNodecgConstructor = CreateNodecgConstructor<
-  'ome-speedrun-layouts',
+  'megaman-relay-layouts',
   Configschema,
   ReplicantMap,
   MessageMap

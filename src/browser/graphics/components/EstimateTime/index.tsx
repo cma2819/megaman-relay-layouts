@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { SpeedcontrolContext } from '../../providers/SpeedcontrolProvider';
 import { TwoRowText } from '../TwoRowText';
 
-export const RunDataLabel = () => {
+export const EstimateTime = () => {
 
   const speedcontrol = useContext(SpeedcontrolContext);
 
@@ -10,6 +10,6 @@ export const RunDataLabel = () => {
   const currentRun = speedcontrol.runDataArray.find((run,) => run.id === currentRunId);
 
   return (
-    <TwoRowText first={currentRun?.game || ''} second={currentRun?.category || ''} small />
+    <TwoRowText first="EST" second={currentRun?.estimate || ''} />
   );
 }
