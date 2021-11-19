@@ -33,7 +33,7 @@ const rainbowMixin = css`
 
 const MainTime = styled.div`
   ${({state}: TimerProps) => (state === 'stopped' || state === 'paused') ? 'color: #888888;' : ''}
-  ${({useRainbow, state}: TimerProps) => (state === 'finished' && !useRainbow) ? 'color: #e0d088;' : ''}
+  ${({useRainbow, state}: TimerProps) => (state === 'finished' && !useRainbow) ? 'color: #fcf951;' : ''}
   ${({useRainbow, state}: TimerProps) => (state === 'finished' && useRainbow) ? rainbowMixin : ''}
 `;
 
